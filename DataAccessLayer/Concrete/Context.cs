@@ -26,6 +26,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Writer> Writers { get; set; }
+        public DbSet<City> Cities { get; set; }
         //neden migration oluşturuyoruz. Context sınıfında çağırmış olduğum dbsetleri yine context sınıfında oluşturmuş
         //olduğum connectionstring üzerinden code first yaklaşımı ile veri tabanına yansıtmak istiyorum.
         //package manager console da default project seçilmiş olması gerekir çünkü bizim veritabanı bağlantı stringi ve bunun tutulduğu sınıf dataaccesslayer içerisinde.
